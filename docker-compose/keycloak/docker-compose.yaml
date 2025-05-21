@@ -15,7 +15,7 @@ services:
 
   # Keycloak
   keycloak-prod-01:
-    image: quay.io/keycloak/keycloak:26.2.0
+    image: quay.io/keycloak/keycloak:26.2.4
     environment:
       - DB_VENDOR=postgres
       - KC_DB_URL=jdbc:postgresql://postgres-prod-01/${POSTGRES_DB}
